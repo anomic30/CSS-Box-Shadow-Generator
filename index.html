@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Shadow Generator</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -14,30 +14,35 @@
     
     <div class="sidebar">
         <div>
-            <p>CSS Box Shadow Generator v1.0</p>
+            <p class="heading">CSS Box Shadow Generator v1.0</p>
         </div>
-        <label for="x-position">X</label>
-        <input type="number" name="x-position" id="x-position" value="6">
+        <label for="x-position" style="font-size: large;">X</label>
+        <input type="range" min="-100" max="100" name="x-position" class="slider" id="x-position" value="6">
+        <p>X-Value: <span id="x-value"></span></p>
+        
+        <label for="y-position" style="font-size: large;">Y</label>
+        <input type="range" min="-100" max="100" name="y-position" class="slider" id="y-position" value="6">
+        <p>Y-Value: <span id="y-value"></span></p>
 
-        <label for="y-position">Y</label>
-        <input type="number" name="y-position" id="y-position" value="6">
+        <label for="blur" style="font-size: large;">Blur</label>
+        <input type="range" min="0" max="100" name="blur" class="slider" id="blur" value="10">
+        <p>Blur-Value: <span id="blur-value"></span></p>
 
-        <label for="blur">Blur</label>
-        <input type="number" name="blur" id="blur" value="10">
+        <label for="spread" style="font-size: large;">Spread</label>
+        <input type="range" min="-10" max="100" name="spread" class="slider" id="spread" value="5">
+        <p>Spread-Value: <span id="spread-value"></span></p>
 
-        <label for="spread">Spread</label>
-        <input type="number" name="spread" id="spread" value="5">
-
-        <label for="shadow-color">Shadow</label>
+        <!-- Colors section -->
+        <label for="shadow-color" style="font-size: large;">Shadow</label>
         <input type="color" name="shadow-color" id="shadow-color" value="#000000">
 
         <div class="divider"></div>
 
-        <label for="box-color">Box</label>
+        <label for="box-color" style="font-size: large;">Box</label>
         <input type="color" name="box-color" id="box-color" value="#ff3333">
 
-        <label for="background-color">Background</label>
-        <input type="color" name="background-color" id="background-color" value="#E4F7A1">
+        <label for="background-color" style="font-size: large;">Background</label>
+        <input type="color" name="background-color" id="background-color" value="#FFFFFF">
 
         
     </div>
