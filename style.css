@@ -41,8 +41,8 @@ body{
 }
 
 #box{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 25px;
     background-color: var(--box-color,#ff3333);
     box-shadow:
